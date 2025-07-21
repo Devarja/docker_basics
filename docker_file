@@ -1,0 +1,9 @@
+Docker main concepts
+  1)Docker is platform for devolping,deploying and testing an application in different environment in a rapid way
+  2)docker virutualise the host application layer whereas a virtual machine virtualises the kernal of a host
+  usually an operating system made of two layers one is kernal layer and an application layer below that there will be an hardware resource where kernal 
+
+
+  note - it is recomended to map a port on which the container is running while running a container
+
+  
