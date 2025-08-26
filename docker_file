@@ -6,4 +6,50 @@ Docker main concepts
 
   note - it is recomended to map a port on which the container is running while running a container
 
+1)Dockerfile
+2)Docker images
+3)Docker containers
+4)Docker networking
+5)Docker volume
+6)Docker compose
+7)Docker swarm
+8)Docker Build
+9)Docker swarm
+
+
+1)Dockerfile creation
+it is text file which contains instructions from which we create a docker immages.
+info
+FROM python:3.1
+WORKDIR /app
+COPY . /app
+RUN apt get install curl
+EXPOSE 8000
+ENV hostname="devaraja" /
+CMD ["python","app.py"]
+
+with this dockerfile and source code of an application we can build docker image with command called
+docker build -t python-img .
+
+after this step we will get an image
+from this image we can build a container
+
+cmd -  Docker run -d -p 80:80 image_name
+
+where image is read only file with executable template to create container
+
+step -1 - some of the basic commands of docker
+1)Docker build -t myimage .
+2)Docker run -d -p 80:80 myimage
+3)Docker images - to list out the image lists
+4)docker ps - to list out the running containers
+5)docker ps -a - to list out the running and not running containers
+6)docker start c_name
+7)docker stop c_name
+8)docker image rmi image-name
+9)docker container rm c_name
+10)docker network create network-name
+11)docker 
+
+
   
